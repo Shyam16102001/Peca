@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "982734544814",
+    "project_id": "peca-62735",
+    "storage_bucket": "peca-62735.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982734544814:android:d593ee6f3e16d41502323f",
+        "android_client_info": {
+          "package_name": "com.shyam16102001.peca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982734544814-kh601tf50jau640ic2gvqtn60hcc3hfn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shyam16102001.peca",
+            "certificate_hash": "4970b72740e121806f4e2200d818dced635fc619"
+          }
+        },
+        {
+          "client_id": "982734544814-ivtvgtftb97vd1lcatq704pnecpit8gt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBivKfoOnd6vogaHWa59k5N54dHgNk0sQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982734544814-ivtvgtftb97vd1lcatq704pnecpit8gt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
