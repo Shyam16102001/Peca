@@ -5,7 +5,7 @@ import 'package:peca/size_config.dart';
 class BulletList extends StatelessWidget {
   final List<String> strings;
 
-  BulletList(this.strings);
+  const BulletList(this.strings, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

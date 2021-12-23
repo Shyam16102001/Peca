@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -18,6 +19,7 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   List userPetList = [];
+  static const String _url = 'https://www.flipkart.com/pet-supplies/pr?sid=p3t';
 
   @override
   void initState() {
@@ -35,13 +37,17 @@ class _BodyState extends State<Body> {
     }
   }
 
+  void _launchURL() async {
+    if (!await launch(_url)) throw 'Could not launch $_url';
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: getProportionateScreenWidth(30)),
+        SizedBox(height: getProportionateScreenHeight(30)),
         userPetList.isEmpty ? notpetsfound() : petsfound(context),
-        SizedBox(height: getProportionateScreenWidth(25)),
+        SizedBox(height: getProportionateScreenHeight(25)),
         SizedBox(
             width: 165,
             child: ContinueButton(
@@ -49,9 +55,18 @@ class _BodyState extends State<Body> {
                 text: " Add Pet",
                 press: () =>
                     Navigator.of(context).pushNamed(AddPet.routeName))),
+        const Spacer(),
         Container(
-          color: Colors.blue,
-        )
+          margin: EdgeInsets.all(getProportionateScreenHeight(30)),
+          child: InkWell(
+            onTap: () => _launchURL(),
+            child: Image.asset(
+              "assets/images/ads.png",
+              fit: BoxFit.fill,
+            ),
+          ),
+        ),
+        const Spacer(),
       ],
     );
   }
