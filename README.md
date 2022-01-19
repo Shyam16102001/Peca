@@ -1,7 +1,7 @@
 # PECA <img src="https://raw.githubusercontent.com/Shyam16102001/Peca/main/assets/icons/logo.png" width="30" height="30">
 ***A Digital pet-care System.***
 
-[APK Link](https://github.com/Shyam16102001/Peca/blob/main/peca.apk)
+[APK Link](https://github.com/Shyam16102001/Peca/raw/main/peca.apk)
 
 ## Description
 * The pets have now become an integral part in many of our lives who require constant monitoring, care, healthy diet etc.
